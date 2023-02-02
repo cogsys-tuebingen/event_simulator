@@ -35,7 +35,7 @@ Dependencies:
 
 ### Usage
 
-This library is intended to be used in an application. For an example, please have a look at our [ROS wrapper]().
+This library is intended to be used in an application. For an example, please have a look at our [ROS wrapper](https://github.com/cogsys-tuebingen/event_simulator_ros).
 
 ## License
 
