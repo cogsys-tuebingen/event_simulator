@@ -1,0 +1,3 @@
+[submodule "libs/OF_DIS"]
+	path = libs/OF_DIS
+	url = git@github.com:AndreasAZiegler/OF_DIS.git

@@ -1,0 +1,16 @@
+@PACKAGE_INIT@
+
+find_package(of_dis_c REQUIRED)
+
+find_package(Eigen3 REQUIRED)
+
+find_package(OpenMP REQUIRED)
+
+find_package(
+  OpenCV
+  COMPONENTS core
+  REQUIRED)
+
+if(NOT TARGET of_dis::of_dis)
+    include(${CMAKE_CURRENT_LIST_DIR}/of_dis-targets.cmake)
+endif()

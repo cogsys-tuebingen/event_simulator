@@ -1,0 +1,16 @@
+@PACKAGE_INIT@
+
+find_package(of_dis)
+
+find_package(Eigen3 REQUIRED)
+
+find_package(OpenMP REQUIRED)
+
+find_package(
+  OpenCV
+  COMPONENTS imgproc highgui video
+  REQUIRED)
+
+if(NOT TARGET event_simulator::event_simulator)
+    include(${CMAKE_CURRENT_LIST_DIR}/event_simulator-targets.cmake)
+endif()
